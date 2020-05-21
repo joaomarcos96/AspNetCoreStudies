@@ -1,19 +1,17 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace AspNetCoreStudies.Api.Entities
+namespace AspNetCoreStudies.Api.Features.Articles
 {
-    public class Post
+    public class Article
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
+        [MaxLength(80)]
         public string Title { get; set; }
 
         [Required]
         public string Content { get; set; }
-
-        public Blog Blog { get; set; }
     }
 }

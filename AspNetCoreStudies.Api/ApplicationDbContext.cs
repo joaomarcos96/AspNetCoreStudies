@@ -1,12 +1,11 @@
-using AspNetCoreStudies.Api.Entities;
+using AspNetCoreStudies.Api.Features.Articles;
 using Microsoft.EntityFrameworkCore;
 
 namespace AspNetCoreStudies.Api
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<Blog> Blogs { get; set; }
-        public DbSet<Post> Posts { get; set; }
+        public DbSet<Article> Articles { get; set; }
 
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
