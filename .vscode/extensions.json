@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "fudge.auto-using",
     "ms-dotnettools.csharp",
     "kreativ-software.csharpextensions",
     "editorconfig.editorconfig",
