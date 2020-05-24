@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace AspNetCoreStudies.Api.Features.Articles
@@ -13,5 +14,11 @@ namespace AspNetCoreStudies.Api.Features.Articles
 
         [Required]
         public string Content { get; set; }
+
+        public DateTimeOffset CreatedAt { get; set; }
+
+        public DateTimeOffset? UpdatedAt { get; set; }
+
+        public DateTimeOffset? DeletedAt { get; set; }
     }
 }
