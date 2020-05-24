@@ -7,6 +7,8 @@ namespace AspNetCoreStudies.Api.Features.Articles
         public ArticlesMapper()
         {
             CreateMap<ArticleDto, Article>();
+            CreateMap<Article, ArticleDto>();
+            CreateMap<ArticleCreateDto, Article>();
         }
     }
 }
